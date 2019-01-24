@@ -123,7 +123,7 @@ a {
 }
 
 /* 3. Specific */
-.wallpaper,
+.wallpaper
     {
     background-image: url("../images/airglow.jpg");
     background-position: center;
