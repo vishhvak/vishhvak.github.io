@@ -112,7 +112,7 @@ a {
 .button,
 .social a {
     transform-origin: center;
-    transition-duration: 0ms;
+    transition-duration: 200ms;
 }
 
 .job,
