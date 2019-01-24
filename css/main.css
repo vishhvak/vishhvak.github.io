@@ -62,7 +62,41 @@ a {
     display: inline-block;
     margin-top: 1.5rem;
     vertical-align: top;
-  }
+}
+
+.social {
+    display: flex;
+    margin-top: 1.5rem;
+}
+
+.social li {
+    height: 2rem;
+    margin-right: 0.5rem;
+    text-align: center;
+    width: 2rem;
+}
+
+.social a {
+    align-items: center;
+    display: flex;
+    font-size: 1.5rem;
+    height: 2rem;
+    justify-content: center;
+    opacity: 0.5;
+    transition-property: opacity, transform;
+    width: 2rem;
+    will-change: opacity, transform;
+}
+
+.social a:hover {
+    opacity: 1;
+    transform: scale(1.25);
+}
+
+.social a:active {
+    opacity: 1;
+    transform: scale(1.1);
+}
 
 /* 2. Shared */
 .wallpaper,
@@ -77,8 +111,8 @@ a {
 
 .button,
 .social a {
-  transform-origin: center;
-  transition-duration: 0ms;
+    transform-origin: center;
+    transition-duration: 0ms;
 }
 
 .job,
@@ -136,17 +170,17 @@ a {
     vertical-align: top;
     white-space: nowrap;
     will-change: box-shadow, transform;
-  }
+}
 
-  .button:hover {
+.button:hover {
     box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.2);
     transform: scale(1.02) translateY(-4px);
-  }
+}
 
-  .button:active {
+.button:active {
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
     transform: scale(0.98) translateY(-2px);
-  }
+}
 
 /* 4. Responsiveness */
 @media screen and (max-width: 799px) {
