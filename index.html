@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html class="bd-rainbow">
 
 <head>
   <meta charset="utf-8" />
@@ -14,13 +14,14 @@
   <script defer type="text/javascript" src="js/main.js"></script>
   <script defer src="https://use.fontawesome.com/releases/v5.0.0/js/all.js"></script>
   <script defer src="https://use.fontawesome.com/releases/v5.0.0/js/all.js"></script>
-
+  <script defer type="text/javascript" src="js/typed.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 </head>
 
 <body>
   <div id="wallpaper" class="wallpaper" data-image="images/airglow.jpg"></div>
   <div class="content">
-    <aside class="side">
+    <aside class="about">
       <figure id="picture" class="picture">
         <div class="picture-shadow"></div>
         <img id="pictureImage" class="picture-image" src="images/vish.jpg" srcset="
@@ -31,14 +32,12 @@
           alt="Image of Vishhvak" width="320" height="320" />
       </figure>
     </aside>
-    <main class="about">
+    <main class="side">
       <h1 class="name">Hi, I'm Vishhvak</h1>
       <p class="job">Student</p>
       <hr class="hr" />
       <div class="description">
-        <p>
-          I spend my time Coding, Reading, Watching and Learning.
-        </p>
+        <span class="element"></span>
       </div>
       <div class="contact">
         <a class="button" href="mailto:vishhvak@outlook.com">
@@ -46,10 +45,6 @@
         </a>
       </div>
       <ul class="social">
-        <li>
-          <a href="https://twitter.com/vishhvak">
-            <i class="fab fa-twitter"></i>
-          </a> </li>
         <li> <a href="https://github.com/vishhvak">
             <i class="fab fa-github"></i>
           </a>
@@ -61,6 +56,25 @@
       </ul>
     </main>
   </div>
+  <script>
+    $(function () {
+      /*
+      Pick randomly from subtitles
+      */
+      var subtitles = [
+        " I live off Code, ^1000 Coffee, ^1000 and Fortnite.",
+        " The One and Only.",
+        " You know who I am.",
+        " Computer Science Enthusiast.",
+        " Always up for some Coffee, ^1000 Chips, ^1000 and Chaos.",
+      ];
+      $(".element").typed({
+        strings: ["", subtitles[Math.floor((Math.random() * subtitles.length))]],
+        typeSpeed: 15,
+        backDelay: 500,
+      });
+    });
+  </script>
 </body>
 
 </html>
