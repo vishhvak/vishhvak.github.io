@@ -10,8 +10,10 @@
   <link href="https://fonts.googleapis.com/css?family=Montserrat|Quicksand" rel="stylesheet">
   <link href="fonts/manrope/manrope.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=PT+Mono" rel="stylesheet">
-  <link href="https//db.onlinewebfonts.com/c/0aba481e9a54b3baf382eae5651d2b4e?family=Santana-Black" rel="stylesheet" type="text/css"/>
-  <link href="https//db.onlinewebfonts.com/c/800e985f75a5a56c2f7b4be502d286de?family=Burbank+Big+Condensed" rel="stylesheet" type="text/css"/>
+  <link href="https//db.onlinewebfonts.com/c/0aba481e9a54b3baf382eae5651d2b4e?family=Santana-Black" rel="stylesheet"
+    type="text/css" />
+  <link href="https//db.onlinewebfonts.com/c/800e985f75a5a56c2f7b4be502d286de?family=Burbank+Big+Condensed" rel="stylesheet"
+    type="text/css" />
   <!--- external css -->
   <link rel="stylesheet" type="text/css" href="css/minireset.min.css" />
   <link rel="stylesheet" type="text/css" href="css/main.css" />
@@ -22,14 +24,16 @@
   <script src="js/typeit.min.js"></script>
   <style>
     .epic {
-      font-family:"Burbank Big Condensed";
+      font-family: "Burbank Big Condensed";
       letter-spacing: 0.05em;
     }
+
     .starbucks {
-      font-family:"Santana-black";
+      font-family: "Santana-black";
     }
+
     .code {
-      font-family:"PT Mono";
+      font-family: "PT Mono";
     }
   </style>
 </head>
@@ -54,11 +58,11 @@
       <hr class="hr" />
       <div class="description">
         <!-- <span class="element"></span> -->
-        <p id="usage"></p>
+        <p id="usage"> </p>
       </div>
       <div class="contact">
         <a class="button" href="mailto:vishhvak@outlook.com">
-           Contact
+          Contact
         </a>
       </div>
       <ul class="social">
@@ -70,36 +74,41 @@
           <a href="https://www.linkedin.com/in/vishhvak-srinivasan-58186114b/">
             <i class="fab fa-linkedin"></i>
           </a> </li>
-          <li>
-            <a href="https://www.instagram.com/vishhvak/">
-              <i class="fab fa-instagram"></i>
-            </a> </li>
-            <li>
-              <a href="docs/résumé.pdf">
-                <i class="far fa-file-alt"></i>
-              </a> </li>
+        <li>
+          <a href="https://www.instagram.com/vishhvak/">
+            <i class="fab fa-instagram"></i>
+          </a> </li>
+        <li>
+          <a href="docs/résumé.pdf">
+            <i class="far fa-file-alt"></i>
+          </a> </li>
       </ul>
     </main>
   </div>
   <script>
     new TypeIt('#usage', {
-      speed: 60,
-      waitUntilVisible: true
-    })
-    .type('Fledgling Computer Scientist.')
-    .pause(500)
-    .break()
-    .type('Life = ')
-    .pause(1000)
-    .type('<span class="code">Code</span>')
-    .pause(1000)
-    .type(' + ')
-    .type('<span class="starbucks">Coffee</span>')
-    .pause(1000)
-    .type(' + ')
-    .type('<span class="epic">Fortnite</span>')
-    .go();
+        speed: 55,
+        waitUntilVisible: true,
+        cursor: false,
+        lifeLike: true,
+        deleteSpeed: 40
+      })
+      .type('Fledgling Computer Scientist.')
+      .pause(1000)
+      .delete()
+      .type('Life = ')
+      .pause(1000)
+      .type('<span class="code">Code</span>')
+      .pause(1000)
+      .type(' + ')
+      .type('<span class="starbucks">Coffee</span>')
+      .pause(1000)
+      .type(' + ')
+      .type('<span class="epic">FORTNITE</span>')
+      .go();
   </script>
 </body>
 
 </html>
+
+<!--  -->
