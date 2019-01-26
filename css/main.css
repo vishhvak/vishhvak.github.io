@@ -73,7 +73,7 @@ a {
 }
 
 .description {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     font-family: "manrope-semibold";
 }
 
@@ -180,7 +180,7 @@ a {
 
 .button {
     background-color: #fff;
-    border-radius: 290486px;
+    border-radius: 09121998px;
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
     color: #9013fe;
     display: inline-block;
@@ -218,6 +218,14 @@ a {
         margin-bottom: 6rem;
         width: 100%;
     }
+    .button {
+        padding: 1em 1em;
+        font-size: 0.75rem;
+    }
+    .description {
+        font-size: 1rem;
+        font-family: "manrope-semibold";
+    }
 }
 
 @media screen and (min-width: 800px) {
@@ -240,5 +248,6 @@ a {
     .about {
         flex-grow: 1;
         flex-shrink: 1;
+        width: 35rem;
     }
 }
