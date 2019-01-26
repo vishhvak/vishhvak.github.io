@@ -6,16 +6,32 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Vishhvak</title>
+  <!-- fonts -->
   <link href="https://fonts.googleapis.com/css?family=Montserrat|Quicksand" rel="stylesheet">
   <link href="fonts/manrope/manrope.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=PT+Mono" rel="stylesheet">
+  <link href="//db.onlinewebfonts.com/c/0aba481e9a54b3baf382eae5651d2b4e?family=Santana-Black" rel="stylesheet" type="text/css"/>
+  <link href="//db.onlinewebfonts.com/c/800e985f75a5a56c2f7b4be502d286de?family=Burbank+Big+Condensed" rel="stylesheet" type="text/css"/>
+  <!--- external css -->
   <link rel="stylesheet" type="text/css" href="css/minireset.min.css" />
   <link rel="stylesheet" type="text/css" href="css/main.css" />
   <link rel="stylesheet" type="text/css" href="css/animations.css">
+  <!--- scripts -->
   <script defer type="text/javascript" src="js/main.js"></script>
   <script defer src="https://use.fontawesome.com/releases/v5.0.0/js/all.js"></script>
-  <script defer src="https://use.fontawesome.com/releases/v5.0.0/js/all.js"></script>
-  <script defer type="text/javascript" src="js/typed.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script src="js/typeit.min.js"></script>
+  <style>
+    .epic {
+      font-family:"Burbank Big Condensed";
+      letter-spacing: 0.05em;
+    }
+    .starbucks {
+      font-family:"Santana-black";
+    }
+    .code {
+      font-family:"PT Mono";
+    }
+  </style>
 </head>
 
 <body>
@@ -34,10 +50,11 @@
     </aside>
     <main class="side">
       <h1 class="name">Hi, I'm Vishhvak</h1>
-      <p class="job">Student</p>
+      <p class="job">Student Developer</p>
       <hr class="hr" />
       <div class="description">
-        <span class="element"></span>
+        <!-- <span class="element"></span> -->
+        <p id="usage"></p>
       </div>
       <div class="contact">
         <a class="button" href="mailto:vishhvak@outlook.com">
@@ -65,23 +82,21 @@
     </main>
   </div>
   <script>
-    $(function () {
-      /*
-      Pick randomly from subtitles
-      */
-      var subtitles = [
-        " I live off Code, ^1000 Coffee, ^1000 & Fortnite.",
-        " The One and Only.",
-        " You know who I am.",
-        " Computer Science Enthusiast.",
-        " Always up for some Coffee, ^1000 Chips, ^1000 & Chaos.",
-      ];
-      $(".element").typed({
-        strings: ["", subtitles[Math.floor((Math.random() * subtitles.length))]],
-        typeSpeed: 15,
-        backDelay: 500,
-      });
-    });
+    new TypeIt('#usage', {
+      speed: 60,
+      waitUntilVisible: true
+    })
+    .type('Fledgling Computer Scientist.')
+    .pause(500)
+    .break()
+    .type('<span class="code">Code</span>')
+    .pause(1000)
+    .type(' + ')
+    .type('<span class="starbucks">Coffee</span>')
+    .pause(1000)
+    .type(' + ')
+    .type('<span class="epic">Fortnite</span>')
+    .go();
   </script>
 </body>
 

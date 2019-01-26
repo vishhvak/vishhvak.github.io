@@ -14,7 +14,6 @@ html {
 }
 
 
-
 @keyframes rainbow {
   0% {
     background-position: 1% 80%;
@@ -33,12 +32,6 @@ html {
     background-size: 800% 800%;
   }
 
-/* html{
-    animation: rainbow 8s ease infinite;
-    background-image: linear-gradient(124deg, #ff470f, #ff3860, #b86bff, #3273dc);
-    background-size: 800% 800%;
-  } */
-
 a {
     color: currentColor;
     cursor: pointer;
@@ -52,8 +45,8 @@ a {
 }
 
 .side {
-    max-height: 20rem;
-    max-width: 20rem;
+    max-height: 25rem;
+    max-width: 25rem;
 }
 
 .about {
@@ -81,7 +74,7 @@ a {
 
 .description {
     font-size: 1.25rem;
-    font-weight: lighter;
+    font-family: "manrope-semibold";
 }
 
 .contact {
@@ -241,7 +234,7 @@ a {
         height: 20rem;
         margin-left: 4rem;
         order: 2;
-        width: 20rem;
+        width: 25rem;
     }
 
     .about {
